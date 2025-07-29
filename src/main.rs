@@ -1,5 +1,9 @@
 use dioxus::prelude::*;
 
+use crate::meal::Meal;
+
+mod meal;
+
 fn main() {
     dioxus::launch(App);
 }
@@ -7,7 +11,9 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
-        "Hi!"
     }
+}
+
+fn get_meals() -> Meal {
 }
 
